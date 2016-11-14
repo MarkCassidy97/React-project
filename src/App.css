@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 5px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*Custom styles*/
+
+.table{
+  border: 1px solid black;
+  margin-top: 25px;
+  margin-bottom: -1px;
+}
+
+#todotable{
+  margin-top: 80px;
+}
+
+.table-header{
+  font-weight: bolder;
+  text-align: center;
+  
+}
+
+td, th{
+  text-align: center;
+  border-bottom: 1px solid black !important;
+}
+
+#record-btn{
+  margin-top: 20px;
+}
