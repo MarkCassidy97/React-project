@@ -68,3 +68,51 @@ class App extends Component{
 }
 
 **THAT IS ALL THAT IS REQUIRED TO GET A COMPONENT TO DISPLAY ON A WEBPAGE**
+
+
+**The props keyword is all the properties inside of a function, for example if you had a function like this**
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+**The props.name bit would be whatever you pass through to the props parameter, you would do this by adding (for example)**
+
+const element = <Welcome name="Sara" />;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+**As you can see, the <Welcome name="Sara" /> would be passed in and then it would display. So, here are the following steps below**
+
+**1. We call ReactDOM.render() with the <Welcome name="Sara" /> element.**
+**2. React calls the Welcome component with {name: 'Sara'} as the props.**
+**3. Our Welcome component returns a <h1>Hello, Sara</h1> element as the result.**
+**4. React DOM efficiently updates the DOM to match <h1>Hello, Sara</h1>.**
+
+
+**TO ENTER DATA FROM ARRAY INTO VIEW**
+
+**To enter data from an array into a view, such as adding <h1>{person.firstname}</h1>,**
+**You will firstly need to make an array to store all the inputs that you need such as:**
+
+export let people = [{
+  firstname: 'Mark',
+  surname: 'Cassidy',
+  email: 'test@test.com'
+}, {
+  firstname: 'Liam',
+  surname: 'Grewer',
+  email: 'test@test.com'
+}, {
+  firstname: 'Jason',
+  surname: 'Marshall',
+  email: 'test@test.com'
+}, {
+  firstname: 'Laura',
+  surname: 'Walls',
+  email: 'test@test.com'
+}]
+
+**You would store that in the App.js file, now that you have the array **

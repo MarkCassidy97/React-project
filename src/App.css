@@ -1,3 +1,13 @@
+.hide {
+  display: none;
+}
+
+
+.modal {
+  display: block !important;
+  opacity: 1;
+}
+
 .App {
   text-align: center;
 }
@@ -46,6 +56,8 @@ td, th{
   border-bottom: 1px solid black !important;
 }
 
-#record-btn{
+.record-btn{
   margin-top: 20px;
 }
+
+
